@@ -38,7 +38,7 @@ function showError(error, duration = 3000){
 
 function resetPassword(email){
 	let data = { email: email };
-	let url = utils.getHostUrl() + "signin/forgottenPassword";
+	let url = utils.getBackendUrl() + "signin/forgottenPassword";
 
 	showLoading();
 

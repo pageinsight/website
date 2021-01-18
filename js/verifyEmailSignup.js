@@ -16,7 +16,7 @@ window.onload = () => {
 function resendCode(){
 
 	let data = { email: sessionStorage.getItem("email") };
-	let url = utils.getHostUrl() + "signup/resendCode";
+	let url = utils.getBackendUrl() + "signup/resendCode";
 
 	showLoading();
 
@@ -71,7 +71,7 @@ function verifyCode(code){
 	let password = sessionStorage.getItem("password");
 
 	let data = { code: code, name: name, email: email, password: password };
-	let url = utils.getHostUrl() + "signup/register";
+	let url = utils.getBackendUrl() + "signup/register";
 
 	showLoading();
 
@@ -82,7 +82,7 @@ function verifyCode(code){
 			sessionStorage.removeItem("name");
 			sessionStorage.removeItem("email");
 			sessionStorage.removeItem("password");
-			window.open("dashboard.html", "_self");
+			window.open("https://dashboard.pageinsight.app", "_self");
 		}else{
 			hideLoading();
 			showError(json.error, 5000);

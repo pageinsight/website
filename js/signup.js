@@ -49,7 +49,7 @@ window.onload = () => {
 
 function signup(name, email, password){
 	let data = { email: email };
-	let url = utils.getHostUrl() + "signup";
+	let url = utils.getBackendUrl() + "signup";
 
 	showLoading();
 

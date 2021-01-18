@@ -16,7 +16,7 @@ window.onload = () => {
 function resendCode(){
 
 	let data = { email: sessionStorage.getItem("email") };
-	let url = utils.getHostUrl() + "signin/forgottenPassword/resendCode";
+	let url = utils.getBackendUrl() + "signin/forgottenPassword/resendCode";
 
 	showLoading();
 
@@ -68,7 +68,7 @@ function showError(error, duration = 3000){
 function verifyCode(code){
 	let email = sessionStorage.getItem("email");
 	let data = { code: code, email: email };
-	let url = utils.getHostUrl() + "signin/forgottenPassword/verifyCode";
+	let url = utils.getBackendUrl() + "signin/forgottenPassword/verifyCode";
 
 	showLoading();
 
