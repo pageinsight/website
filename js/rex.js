@@ -46,6 +46,10 @@ export function getHostUrl(){
 	return window.location.protocol + "//" + window.location.host + "/";
 }
 
+export function getBackendUrl(){
+	return "https://webmetric.herokuapp.com/";
+}
+
 export function showError(elm, msg, duration = 3000){
 	elm.textContent = msg;
 	elm.style.display = "block";

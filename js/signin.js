@@ -31,13 +31,12 @@ window.onload = () => {
 }
 
 function openDashboard(){
-	window.open("dashboard.html", "_self");
+	window.open("https://dashboard.pageinsight.app", "_self");
 }
 
 function login(email, password){
-	console.log(email + " " + password);return;
 	let data = { email: email, password: password };
-	let url = utils.getHostUrl() + "signin";
+	let url = utils.getBackendUrl() + "signin";
 
 	showLoading();
 
