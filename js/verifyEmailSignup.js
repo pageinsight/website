@@ -78,11 +78,10 @@ function verifyCode(code){
 	utils.sendPostRequest(url, data)
 	.then(json => {
 		if(json.status == "success"){
-			sessionStorage.setItem("apiKey", json.apiKey);
 			sessionStorage.removeItem("name");
 			sessionStorage.removeItem("email");
 			sessionStorage.removeItem("password");
-			window.open("https://dashboard.pageinsight.app", "_self");
+			window.open("https://dashboard.pageinsight.app/signin.html#"+json.apiKey, "_self");
 		}else{
 			hideLoading();
 			showError(json.error, 5000);

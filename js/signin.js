@@ -30,8 +30,8 @@ window.onload = () => {
 	};
 }
 
-function openDashboard(){
-	window.open("https://dashboard.pageinsight.app", "_self");
+function openDashboard(apiKey){
+	window.open("https://dashboard.pageinsight.app/signin.html#"+apiKey, "_self");
 }
 
 function login(email, password){
@@ -43,8 +43,7 @@ function login(email, password){
 	utils.sendPostRequest(url, data)
 	.then(json => {
 		if(json.status == "success"){
-			sessionStorage.setItem("apiKey", json.apiKey);
-			openDashboard();
+			openDashboard(json.apiKey);
 		}else{
 			hideLoading();
 			utils.showError(getErrorMessage(), json.error, 5000);
