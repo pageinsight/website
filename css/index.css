@@ -133,6 +133,11 @@ body{
 	.custom-heading{
 		font-size: 2.3em;
 	}
+        .custom-feature-description{
+		margin-top: 16px;
+		font-size: 1.0em;
+		line-height: 1.1em;
+	}
 }
 
 @media (max-width: 625px){
@@ -148,8 +153,8 @@ body{
 		margin-top: 16px;
 	}
 	.custom-feature-description{
-		margin-top: 8px;
-		font-size: 1.1em;
+		margin-top: 16px;
+		font-size: 1.0em;
 		line-height: 1.1em;
 	}
 	.custom-paragraph{
