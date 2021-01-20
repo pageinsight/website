@@ -152,6 +152,9 @@ body{
 	.custom-grid-container{
 		margin-top: 16px;
 	}
+        .custom-feature-heading{
+	        margin-top: 32px;
+        }
 	.custom-feature-description{
 		margin-top: 16px;
 		font-size: 1.0em;
