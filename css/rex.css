@@ -7,6 +7,10 @@
 	box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body{
 	font-family: Verdana, Geneva, Arial, sans-serif;
 	font-size: small;
@@ -192,7 +196,7 @@ body{
 }
 
 .rex-color-primary{
-	color: rgb(0, 167, 238);
+	color: rgb(4, 151, 124);
 }
 
 .rex-color-secondary{
