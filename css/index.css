@@ -137,6 +137,11 @@ body{
 	.custom-heading{
 		font-size: 2.3em;
 	}
+    .custom-feature-description{
+		margin-top: 16px;
+		font-size: 1.0em;
+		line-height: 1.1em;
+	}
 }
 
 @media (max-width: 625px){
@@ -151,13 +156,16 @@ body{
 	.custom-grid-container{
 		margin-top: 16px;
 	}
+    .custom-feature-heading{
+        margin-top: 32px;
+    }
 	.custom-feature-description{
-		margin-top: 8px;
-		font-size: 1.3em;
-		line-height: 1.1em;
+		margin-top: 16px;
+		font-size: 1.1em;
+		line-height: 1.5em;
 	}
 	.custom-paragraph{
-		font-size: 1.3em;
+		font-size: 1.1em;
 	}
 	.custom-display-grid{
 		display: block;
@@ -189,6 +197,7 @@ body{
 		font-size: 2.1em;
 	}
 	#custom-subheadline{
+		font-size: 1.3em;
 		line-height: 1.5em;
 	}
 }
