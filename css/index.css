@@ -1,7 +1,7 @@
 @import 'rex.css';
 
 body{
-	background-color: white;
+	background-color: rgb(244, 245, 255);
 }
 
 .custom-responsive-container{
@@ -41,6 +41,22 @@ body{
 	font-size: 18px;
 }
 
+.custom-header-text-color{
+	color: rgb(231, 237, 242);
+}
+
+.custom-content-color1{
+	color: rgb(46, 51, 63);
+}
+
+.headline1{
+	font-size: 48px;
+}
+
+.below-svg-margin{
+	margin-top: -68px;
+}
+
 @media (max-width: 1280px){
 	.custom-responsive-container{
 		width: 70%;
@@ -56,6 +72,22 @@ body{
 @media (max-width: 1000px){
 	.custom-responsive-container{
 		width: 90%;
+	}
+	.headline1{
+		font-size: 42px;
+	}
+	.text-18px{
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 850px){
+	.custom-head-grid{
+		display: block;
+		text-align: center;
+	}
+	#demoImage{
+		margin-top: 32px;
 	}
 }
 
@@ -121,6 +153,9 @@ body{
 	.rex-fs-18px{
 		font-size: 16px;
 	}
+	.headline1{
+		font-size: 38px;
+	}
 }
 
 @media (max-width: 625px){
@@ -128,10 +163,15 @@ body{
 		width: 100%;
 		padding: 0 16px;
 	}
+	#space3{
+		display: none;
+	}
 }
 
 @media (max-width: 514px){
-	
+	.headline1{
+		font-size: 32px;
+	}
 }
 
 @media (max-width: 450px){
