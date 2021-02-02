@@ -45,16 +45,20 @@ body{
 	color: rgb(231, 237, 242);
 }
 
+.custom-content-header-color{
+	color: rgb(27, 33, 45);
+}
+
 .custom-content-color1{
-	color: rgb(46, 51, 63);
+	color: rgb(114, 119, 130);
 }
 
 .headline1{
 	font-size: 48px;
 }
 
-.below-svg-margin{
-	margin-top: -68px;
+.content1{
+	font-size: 24px;
 }
 
 @media (max-width: 1280px){
@@ -106,7 +110,7 @@ body{
 		left: 0;
 		width: 100%;
 		height: 100vh;
-		background-color: rgba(0,0,0, 0.2);
+		background-color: rgba(0,0,0, 0.5);
 	}
 	#nav-menu li{
 		display: block;
@@ -156,6 +160,9 @@ body{
 	.headline1{
 		font-size: 38px;
 	}
+	.content1{
+		font-size: 20px;
+	}
 }
 
 @media (max-width: 625px){
@@ -172,6 +179,10 @@ body{
 	.headline1{
 		font-size: 32px;
 	}
+	.content1{
+		font-size: 18px;
+	}
+
 }
 
 @media (max-width: 450px){
