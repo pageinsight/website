@@ -859,12 +859,20 @@ body{
 	padding-right: 16px;
 }
 
+.rex-pr-24px{
+	padding-right: 24px;
+}
+
 .rex-pr-32px{
 	padding-right: 32px;
 }
 
 .rex-pl-16px{
 	padding-left: 16px;
+}
+
+.rex-pl-24px{
+	padding-left: 24px
 }
 
 .rex-pl-32px{

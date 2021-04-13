@@ -246,6 +246,17 @@ body{
 	.custom-head-btn-grid div:nth-child(2){
 		margin-top: 16px;
 	}
+	.custom-bottom-btn-grid{
+		width: 80%;
+		display: block;
+	}
+	.custom-bottom-btn-grid div{
+		padding: 0;
+	}
+	.custom-bottom-btn-grid div:nth-child(2){
+		margin-top: 0px;
+	}
+	
 }
 
 @media (max-width: 450px){
