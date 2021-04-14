@@ -111,6 +111,41 @@ body{
 	width: 500px;
 }
 
+.custom-signup-container-width{
+	width: 800px;
+}
+
+.custom-signup-container-grid{
+	display: grid;
+	grid-template-columns: 60% 40%;
+	grid-template-rows: auto;
+}
+
+.custom-list-style-icon-checkmark-done{
+	background: url( "../images/icons/ic_list_item_done.png" ) no-repeat;
+}
+
+.custom-list-style-icon-checkmark-undone{
+	background: url( "../images/icons/ic_list_item_undone.png" ) no-repeat;
+}
+
+.custom-list-style-icon-checkmark-active{
+	background: url( "../images/icons/ic_list_item_active.png" ) no-repeat;
+}
+
+.custom-list-style-icon-checkmark{
+	display: inline-block;
+	background-size: 16px 16px; /* image's size */
+	height: 16px; /* image's height */
+	padding-left: 32px; /* image's width plus 10 px (margin between text and image) */
+}
+
+.custom-list-style-icon-checkmark span{
+	height: 16px; /* image's height */
+	display: table-cell;
+	vertical-align: middle;
+}
+
 @media (max-width: 1280px){
 	.custom-responsive-container{
 		width: 70%;
@@ -155,6 +190,15 @@ body{
 	}
 	.custom-display-grid3{
 		display: block;
+	}
+	.custom-signup-container-grid{
+		display: block;
+	}
+	.custom-signup-container-list{
+		display: none;
+	}
+	.custom-signup-container-width{
+		width: 500px;
 	}
 }
 
@@ -287,7 +331,13 @@ body{
 }
 
 @media (max-width: 500px){
+	.custom-signup-container-form{
+		padding: 0;
+	}
 	.custom-login-container-width{
+		width: 100%;
+	}
+	.custom-signup-container-width{
 		width: 100%;
 	}
 }

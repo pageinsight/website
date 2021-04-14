@@ -40,6 +40,17 @@ body{
 	background-color: rgb(210, 210, 210); 
 }
 
+/*Highlight color*/
+::-moz-selection { 
+	color: white;
+	background: rgb(56, 89, 220);
+}
+
+::selection {
+	color: white;
+	background: rgb(56, 89, 220);
+}
+
 .rex-underline-onhover:hover{
 	text-decoration: underline;
 }
@@ -878,6 +889,10 @@ body{
 
 .rex-margin32px{
 	margin: 32px;
+}
+
+.rex-pad0px{
+	padding: 0px;
 }
 
 .rex-pad8px{
