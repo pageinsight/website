@@ -27,15 +27,16 @@
 	<link type="text/css" rel="stylesheet" href="css/index.css"/>
 	<link type="text/css" rel="stylesheet" href="css/rex-toggle-switch.css"/>
 	<link type="text/css" rel="stylesheet" href="css/rex-range-slider.css"/>
+	<script type="text/javascript" src="js/pricing.js"></script>
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
 	<nav class="rex-background-white rex-width-100pp rex-height-60px rex-display-flex rex-center-flex-items">
 		<div class="custom-responsive-container">
 			<input type="checkbox" id="check" class="rex-display-gone">
-			<a id="fs-title" href="https://pageinsight.app">
-				<img src="https://assets.pageinsight.app/icon-128px.png" class="rex-width-40px rex-height-40px rex-vertical-align rex-mr-16px rex-mt-6px"/>
-				<span class="rex-color-blacktint rex-weight-bold rex-vertical-align">Page Insight</span>
+			<a id="fs-title" href="https://pageinsight.app" class="rex-vertical-align-span">
+				<img src="https://assets.pageinsight.app/icon-128px.png" class="rex-width-40px rex-height-40px rex-mr-16px"/>
+				<span class="rex-color-blacktint rex-weight-bold">Page Insight</span>
 			</a>
 			<label id="checkLabel" for="check" class="rex-center-relative-div-vertical rex-fs-24px">
 				<i class="fas fa-bars rex-center-div-relative"></i>
@@ -51,23 +52,22 @@
 					</span>
 				</li>
 				<li class="rex-mr-16px rex-fs-normal">
-					<a href="index.html" class="rex-color-secondary">Home</a>
+					<a href="https://pageinsight.app" class="rex-color-blacktint">Home</a>
 				</li>
 				<li class="rex-ml-16px rex-mr-16px rex-fs-normal">
-					<a href="pricing.html" class="rex-color-secondary">Pricing</a>
+					<a href="pricing.html" class="rex-color-blacktint">Pricing</a>
 				</li>
 				<li class="rex-ml-16px rex-mr-16px rex-fs-normal">
-					<a href="#" class="rex-color-secondary">Log in</a>
+					<a href="login.html" class="rex-color-blacktint">Log in</a>
 				</li>
 
 				<li class="rex-ml-16px">
-					<button class="rex-btn-primary rex-fs-small">Get started for free</button>
+					<button class="custom-btn-nav rex-fs-small">Get started for free</button>
 				</li>
 			</ul>
 		</div>
 	</nav>
 	<div class="custom-responsive-container rex-center-text">
-		<div class="rex-space-32px"></div>
 		<div class="rex-space-32px"></div>
 		<h1 class="rex-color-secondary headline1 rex-weight-normal rex-mt-32px">Simple, transparent pricing</h1>
 		<p class="custom-content-color1 content1 rex-mt-24px rex-line-height-small">No contracts. No surprise fees.</p>
@@ -78,13 +78,13 @@
 				Pay Monthly
 			</span>
 			<label class="rex-toggle-switch">
-				<input type="checkbox">
+				<input id="customToggleSwitch" type="checkbox">
 				<span class="rex-toggle-switch-slider rex-toggle-switch-round"></span>
 			</label>
 			<span class="rex-ml-32px">
 				<span class="rex-fs-normal">Pay Yearly</span>
 				<br/>
-				<span class="rex-fs-small rex-color-secondary rex-weight-bold rex-line-height-small">Save 50%</span>
+				<span class="rex-fs-small rex-color-secondary rex-weight-bold rex-line-height-small">Save 33%</span>
 			</span>
 			
 		</span>
@@ -93,25 +93,103 @@
 			<div class="rex-display-grid2">
 				<div>
 					<div class="rex-fs-small-50p rex-color-gray rex-text-overflow-ellipses">MONTHLY PAGEVIEWS</div>
-					<div class="rex-weight-bold rex-fs-normal-50p rex-color-black">10K</div>
+					<div id="pageviews_elm" class="rex-weight-bold rex-fs-normal-50p rex-color-black">10K</div>
 				</div>
 				<div class="rex-text-align-right">
 					<div class="rex-fs-small-50p rex-color-gray rex-text-overflow-ellipses">YOUR PRICE</div>
-					<div class="rex-weight-bold rex-fs-normal-50p rex-color-black">$2 / mo</div>
+					<div id="price_elm" class="rex-weight-bold rex-fs-normal-50p rex-color-black">$6 / mo</div>
 				</div>
 			</div>
 
 			<div class="rex-space-32px"></div>
 
 			<div class="rex-range-slidecontainer">
-				<input type="range" min="0" max="100" value="0" class="rex-range-slider" step="12.5" id="myRange">
+				<input type="range" min="0" max="8" value="0" class="rex-range-slider" step="1" id="customRangeSlider">
 			</div>
 
 			<div class="rex-space-16px"></div>
 
 			<div class="rex-vertical-align-span rex-width-100pp">
 				<span class="rex-fs-small rex-color-secondary rex-nowrap">WHAT'S INCLUDED</span>
-				<div class="rex-display-inline-block rex-height-2px rex-background-1 rex-width-100pp rex-ml-16px"></div> 
+				<div class="rex-display-inline-block rex-height-2px rex-background-gray rex-width-100pp rex-ml-16px"></div> 
+			</div>
+			<div class="custom-display-grid3">
+				<div>
+					<ul class="custom-list-style-type">
+						<li>
+							<div class="rex-mt-16px rex-mb-16px">
+								<img src="images/icons/ic_checkmark.png" class="rex-width-16px rex-height-16px rex-vertical-align"/>
+								<span class="rex-ml-8px">Unlimited websites</span>
+							</div>
+						</li>
+						<li>
+							<div class="rex-mt-16px rex-mb-16px">
+								<img src="images/icons/ic_checkmark.png" class="rex-width-16px rex-height-16px rex-vertical-align"/>
+								<span class="rex-ml-8px">Custom events*</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<ul class="custom-list-style-type">
+						<li>
+							<div class="rex-mt-16px rex-mb-16pxrex-border">
+								<img src="images/icons/ic_checkmark.png" class="rex-width-16px rex-height-16px rex-vertical-align"/>
+								<span class="rex-ml-8px">Email reports</span>
+							</div>
+						</li>
+						<li>
+							<div class="rex-mt-16px rex-mb-16px">
+								<img src="images/icons/ic_checkmark.png" class="rex-width-16px rex-height-16px rex-vertical-align"/>
+								<span class="rex-ml-8px">Custom domains</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<ul class="custom-list-style-type">
+						<li>
+							<div class="rex-mt-16px rex-mb-16px">
+								<img src="images/icons/ic_checkmark.png" class="rex-width-16px rex-height-16px rex-vertical-align"/>
+								<span class="rex-ml-8px">100% data ownership</span>
+							</div>
+						</li>
+						<li>
+							<div class="rex-mt-16px rex-mb-16px">
+								<img src="images/icons/ic_checkmark.png" class="rex-width-16px rex-height-16px rex-vertical-align"/>
+								<span class="rex-ml-8px">Strong privacy protection</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<p class="rex-fs-exta-small rex-color-gray rex-mt-16px rex-line-height-normal">* Note that if you use the "Custom Events" feature, then these count towards your billable monthly pageviews.</p>
+		</div>
+
+		<div class="rex-space-32px"></div>
+		<div class="rex-space-32px"></div>
+
+		<div class="rex-center-text">
+			<a href="#"><button class="rex-btn-primary rex-fs-normal">Start your free trial</button></a>
+		</div>
+
+		<div class="rex-space-32px"></div>
+		<div class="rex-space-32px"></div>
+		<div class="rex-space-32px"></div>
+		<div class="rex-space-32px"></div>
+		
+		<div class="rex-background-white rex-curDiv-16px rex-pad32px rex-box-shadow1 rex-text-align-left">
+			<div class="custom-social-profile-grid">
+				<div class="rex-pt-16px rex-pl-16px rex-pb-16px rex-display-flex rex-center-flex-items">
+					<img src="images/pics/pic_testimonial_6.png" class="rex-width-80px rex-height-80px rex-curDiv-40px"/>
+				</div>
+				<div class="rex-pad16px">
+					<p class="custom-content-color2 rex-fs-small rex-line-height-small">
+						"The CCNA commission is based on Page Insight Analytics which is the leading website analytics platform that provides relevant and reliable insights into user behaviour. The data and information collected by Page Insight is 100% owned and controlled by the Commission. This guarantees compliance with strict privacy regulations and laws. Page Insight Analytics is used by more than 1,000,000 websites worldwide, including large corporations, SMEs, governments & non-profit organisations."​
+						<br/><br/>
+						- Conservationem de Nationale
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -126,11 +204,11 @@
 		<h1 class="rex-color-white headline1 rex-mt-32px">Page Insight Analytics</h1>
 		<div class="rex-space-32px"></div>
 		<div class="rex-center-text">
-			<a href="/" class="rex-fs-normal rex-color-white rex-pr-32px">Home</a>
+			<a href="https://pageinsight.app" class="rex-fs-normal rex-color-white rex-pr-32px">Home</a>
 			<a href="pricing.html" class="rex-fs-normal rex-color-white">Pricing</a>
-			<a href="#" class="rex-fs-normal rex-color-white rex-pl-32px">Log in</a>
+			<a href="login.html" class="rex-fs-normal rex-color-white rex-pl-32px">Log in</a>
 		</div>
-		<p class="rex-color-white rex-pad32px rex-fs-normal">All rights reserved © 2021</p>
+		<p class="rex-color-white rex-pad32px rex-fs-normal">© 2021 Page Insight Analytics. All rights reserved</p>
 		<div class="rex-space-8px"></div>
 	</div>
 </body>

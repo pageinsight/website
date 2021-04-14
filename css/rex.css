@@ -44,6 +44,10 @@ body{
 	text-decoration: underline;
 }
 
+.rex-underline{
+	text-decoration: underline;
+}
+
 .rex-btn-primary{
 	padding: 16px;
 	background-color: rgb(30, 57, 166);
@@ -73,14 +77,15 @@ body{
 }
 
 .rex-input-primary{
-	padding: 16px;
-	border: 1px solid black;
-	border-radius: 8px;
-	background-color: transparent;
+	padding: 12px 16px;
+	border: 0;
+	border-radius: 6px;
+	background-color: rgb(240, 240, 240);
 }
 
 .rex-input-primary:focus{
-	border: 2px solid black;
+	border: 1px solid rgb(56, 89, 220);
+	background-color: transparent;
 }
 
 .rex-border{
@@ -154,6 +159,12 @@ body{
 .rex-display-grid2{
 	display: grid;
 	grid-template-columns: 50% 50%;
+	grid-template-rows: auto;
+}
+
+.rex-display-grid3{
+	display: grid;
+	grid-template-columns: 33.3% 33.3% 33.3%;
 	grid-template-rows: auto;
 }
 
@@ -297,6 +308,10 @@ body{
 	background-color: rgba(100, 100, 100, 0.3);
 }
 
+.rex-background-gray{
+	background-color: rgb(215, 215, 215);
+}
+
 .rex-background-transparent{
 	background-color: transparent;
 }
@@ -335,6 +350,10 @@ body{
 
 .rex-fs-small{
 	font-size: 1.2em;
+}
+
+.rex-fs-extra-small-50p{
+	font-size: 1.1em;
 }
 
 .rex-fs-extra-small{
@@ -497,6 +516,10 @@ body{
 	height: 10px;
 }
 
+.rex-height-16px{
+	height: 16px;
+}
+
 .rex-height-20px{
 	height: 20px;
 }
@@ -631,6 +654,10 @@ body{
 
 .rex-width-10px{
 	width: 10px;
+}
+
+.rex-width-16px{
+	width: 16px;
 }
 
 .rex-width-20px{
