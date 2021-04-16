@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 *{
 	padding: 0;
@@ -14,8 +14,7 @@ html {
 }
 
 body{
-	/*font-family: Verdana, Geneva, Arial, sans-serif;*/
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Inter', sans-serif;
 	font-size: small;
 	background-color: rgb(250, 250, 250);
 }
@@ -337,6 +336,10 @@ body{
 
 .rex-fs-extra-large{
 	font-size: 3.5em;
+}
+
+.rex-fs-large-50p{
+	font-size: 3.0em;
 }
 
 .rex-fs-large{
@@ -1524,3 +1527,47 @@ body{
 	}
 }
 
+@media (max-width: 600px){
+	body{
+		font-size: x-small;
+	}
+	.rex-fs-extra-large{
+		font-size: 3.4em;
+	}
+
+	.rex-fs-large-50p{
+		font-size: 2.9em;
+	}
+
+	.rex-fs-large{
+		font-size: 2.7em;
+	}
+
+	.rex-fs-medium{
+		font-size: 2.3em;
+	}
+
+	.rex-fs-normal-50p{
+		font-size: 1.8em;
+	}
+
+	.rex-fs-normal{
+		font-size: 1.4em;
+	}
+
+	.rex-fs-small-50p{
+		font-size: 1.2em;
+	}
+
+	.rex-fs-small{
+		font-size: 1.1em;
+	}
+
+	.rex-fs-extra-small-50p{
+		font-size: 1.0em;
+	}
+
+	.rex-fs-extra-small{
+		font-size: 0.9em;
+	}
+}

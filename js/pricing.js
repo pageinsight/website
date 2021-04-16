@@ -2,43 +2,43 @@ const pricingTable =
 [
 {
 	pageviews: "10K",
-	price_monthly: "$6 / mo",
-	price_yearly: "$4 / mo"
+	price_monthly: "$2 / mo",
+	price_yearly: "$1 / mo"
 },
 {
 	pageviews: "100K",
-	price_monthly: "$12 / mo",
-	price_yearly: "$8 / mo"
+	price_monthly: "$6 / mo",
+	price_yearly: "$3 / mo"
 },
 {
 	pageviews: "200K",
-	price_monthly: "$18 / mo",
-	price_yearly: "$12 / mo"
+	price_monthly: "$10 / mo",
+	price_yearly: "$5 / mo"
 },
 {
 	pageviews: "500K",
-	price_monthly: "$27 / mo",
-	price_yearly: "$18 / mo"
+	price_monthly: "$14 / mo",
+	price_yearly: "$7 / mo"
 },
 {
 	pageviews: "1m",
-	price_monthly: "$48 / mo",
-	price_yearly: "$32 / mo"
+	price_monthly: "$24 / mo",
+	price_yearly: "$12 / mo"
 },
 {
 	pageviews: "2m",
-	price_monthly: "$69 / mo",
-	price_yearly: "$46 / mo"
+	price_monthly: "$36 / mo",
+	price_yearly: "$18 / mo"
 },
 {
 	pageviews: "5m",
-	price_monthly: "$99 / mo",
-	price_yearly: "$66 / mo"
+	price_monthly: "$50 / mo",
+	price_yearly: "$25 / mo"
 },
 {
 	pageviews: "10m",
-	price_monthly: "$150 / mo",
-	price_yearly: "$100 / mo"
+	price_monthly: "$76 / mo",
+	price_yearly: "$32 / mo"
 },
 {
 	pageviews: "10m+",
