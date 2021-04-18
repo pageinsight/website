@@ -1,4 +1,13 @@
 @import 'rex.css';
+@import 'rex-size.css';
+@import 'rex-color.css';
+@import 'rex-background.css';
+@import 'rex-font-size.css';
+@import 'rex-margin.css';
+@import 'rex-padding.css';
+@import 'rex-display.css';
+@import 'rex-alignment.css';
+@import 'rex-dom.css';
 
 body{
 	background-color: rgb(244, 245, 255);
@@ -86,7 +95,6 @@ body{
 	background-color: rgb(30, 57, 166);
 	border: 0;
 	border-radius: 8px;
-	letter-spacing: 2px;
 	color: white;
 }
 
