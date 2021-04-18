@@ -18,6 +18,14 @@
 	display: flex;
 }
 
+.rex-display-table{
+	display: table;
+}
+
+.rex-display-table-cell{
+	display: table-cell;
+}
+
 .rex-center-flex-items{
 	flex-direction: column;
 	justify-content: center;
