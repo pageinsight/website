@@ -143,6 +143,15 @@ body{
 	vertical-align: middle;
 }
 
+.custom-index-center-div-width{
+	width: 450px;
+}
+
+.custom-index-center-div-img-size{
+	width: 70px;
+	height: 70px;
+}
+
 @media (max-width: 1280px){
 	.custom-responsive-container{
 		width: 70%;
@@ -301,7 +310,6 @@ body{
 	.custom-bottom-btn-grid div:nth-child(2){
 		margin-top: 0px;
 	}
-	
 }
 
 @media (max-width: 500px){
@@ -313,5 +321,15 @@ body{
 	}
 	.custom-signup-container-width{
 		width: 100%;
+	}
+}
+
+@media (max-width: 480px){
+	.custom-index-center-div-width{
+		width: 90%;
+	}
+	.custom-index-center-div-img-size{
+		width: 60px;
+		height: 60px;
 	}
 }

@@ -48,6 +48,10 @@
 	background-color: rgb(215, 215, 215);
 }
 
+.rex-background-lightgray{
+	background-color: rgb(240, 240, 240);
+}
+
 .rex-background-transparent{
 	background-color: transparent;
 }
